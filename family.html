@@ -3,95 +3,137 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Family</title>
+<title>Our Family | Gaudreault Family</title>
 
 <style>
-body{font-family:Arial;margin:0;background:#f5f5f5;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-header{
-background:#2c3e50;
-padding:20px 40px;
+body{
+font-family:Segoe UI,Arial,sans-serif;
+background:#f5f7fa;
+color:#333;
+}
+
+.header{
+background:#1f2937;
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:15px 30px;
+flex-wrap:wrap;
 }
 
 .logo a{
 color:white;
 text-decoration:none;
-font-size:28px;
+font-size:30px;
 font-weight:bold;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin-left:10px;
-padding:10px 15px;
-border-radius:6px;
+.nav{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
 }
 
-nav a:hover{
-background:#f1c40f;
-color:black;
+.nav a{
+color:white;
+text-decoration:none;
+padding:10px 16px;
+border-radius:8px;
+}
+
+.nav a:hover{
+background:#2563eb;
+}
+
+.hero{
+background:#2563eb;
+color:white;
+padding:60px 20px;
+text-align:center;
 }
 
 .container{
-max-width:1000px;
+max-width:1100px;
 margin:auto;
-padding:30px;
+padding:40px 20px;
 }
 
 .card{
 background:white;
 padding:25px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
+margin-bottom:20px;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
 
-.home-btn{
-text-align:center;
-margin-top:30px;
-}
-
-.home-btn a{
-background:#2c3e50;
+footer{
+background:#1f2937;
 color:white;
-padding:12px 20px;
-text-decoration:none;
-border-radius:8px;
+text-align:center;
+padding:20px;
 }
 </style>
 </head>
 
 <body>
 
-<header>
+<header class="header">
 <div class="logo">
-index.htmlThe Gaudreault Family</a>
+<a href="index.html">Gaudreault Family</a>
 </div>
 
-<nav>
-index.htmlHome</a>
-family.htmlFamily</a>
-photos.htmlPhotos</a>
-events.htmlEvents</a>
-memorial.htmlMemorial</a>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="family.html">Family</a>
+<a href="photos.html">Photos</a>
+<a href="events.html">Events</a>
+<a href="memorial.html">Memorial</a>
 </nav>
 </header>
+
+<section class="hero">
+<h1>Our Family</h1>
+<p>Generations connected by love and tradition.</p>
+</section>
 
 <div class="container">
 
 <div class="card">
+<h2>Family Story</h2>
+<p>
+Add your family history here. Talk about where your family came from,
+important milestones, and traditions passed through generations.
+</p>
+</div>
+
+<div class="card">
+<h2>Family Values</h2>
+<p>
+Love, loyalty, respect, kindness, and always being there for one another.
+</p>
+</div>
+
+<div class="card">
 <h2>Family Members</h2>
-<p>Add names, biographies, birthdays and family stories here.</p>
+<ul>
+<li>Daniel Gaudreault</li>
+<li>Add Family Member</li>
+<li>Add Family Member</li>
+<li>Add Family Member</li>
+</ul>
 </div>
 
-<div class="home-btn">
-index.html← Back Home</a>
 </div>
 
-</div>
+<footer>
+© 2026 Gaudreault Family
+</footer>
 
 </body>
 </html>
