@@ -6,135 +6,214 @@
 <title>The Gaudreault Family</title>
 
 <style>
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-font-family:Arial, sans-serif;
-background:#f5f5f5;
-color:#333;
+    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+    background:#f5f7fa;
+    color:#333;
 }
 
+/* HEADER */
+
 header{
-background:#2c3e50;
-padding:20px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
+    background:#1f2937;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
 }
 
 .logo a{
-color:white;
-text-decoration:none;
-font-size:28px;
-font-weight:bold;
+    color:white;
+    text-decoration:none;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin:5px;
-padding:10px 15px;
-border-radius:6px;
-font-weight:bold;
+    color:white;
+    text-decoration:none;
+    padding:12px 18px;
+    border-radius:8px;
+    font-weight:600;
+    transition:0.3s;
 }
 
 nav a:hover{
-background:#f1c40f;
-color:black;
+    background:#2563eb;
 }
 
+/* HERO */
+
 .hero{
-text-align:center;
-padding:80px 20px;
-background:white;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1600");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
 }
 
 .hero h1{
-font-size:50px;
-margin-bottom:15px;
+    font-size:60px;
+    margin-bottom:20px;
 }
 
-.content{
-max-width:1000px;
-margin:auto;
-padding:30px;
+.hero p{
+    font-size:22px;
+    max-width:700px;
+    margin:auto;
+}
+
+.hero-buttons{
+    margin-top:35px;
+}
+
+.hero-buttons a{
+    display:inline-block;
+    padding:14px 28px;
+    margin:10px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.hero-buttons a:hover{
+    background:#1d4ed8;
+}
+
+/* CONTENT */
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
 }
 
 .card{
-background:white;
-padding:25px;
-margin-bottom:20px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,.1);
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#1f2937;
 }
 
 footer{
-background:#2c3e50;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:30px;
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:40px;
 }
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+}
+
 </style>
 </head>
-
 <body>
 
 <header>
 
 <div class="logo">
-index.htmlThe Gaudreault Family</a>
+<a href="index.html">Family</a>
 </div>
 
 <nav>
 index.htmlHome</a>
 <a hrefhtmlFamily</a>
 photos.htmlPhotos</a>
-<a href="events.html>
-memorial.htmlMemorial</a>
-</nav>
+<a hrefhtmlEvents</a>
+<a href="memorial.html">Mem/nav>
 
 </header>
 
 <section class="hero">
+
 <h1>Welcome Home</h1>
-<p>Our History • Our Memories • Our Legacy</p>
+
+<p>
+Preserving our family's history, celebrating our memories,
+and honoring the generations that came before us.
+</p>
+
+<div class="hero-buttons">
+family.htmlMeet The Family</a>
+photos.htmlView Photos</a>
+</div>
+
 </section>
 
-<div class="content">
+<div class="container">
+
+<div class="cards">
 
 <div class="card">
-<h2>Welcome</h2>
+<h2>Our Family</h2>
 <p>
-This website was created to celebrate our family,
-preserve memories, share photos, and honor those who came before us.
+Learn about family members, birthdays, stories,
+and the people who make our family special.
 </p>
 </div>
 
 <div class="card">
-<h2>Our Family Motto</h2>
+<h2>Family Events</h2>
 <p>
-Together in love, united through generations.
+Keep up with reunions, birthdays,
+holiday gatherings, and special occasions.
 </p>
 </div>
 
 <div class="card">
-<h2>Family Legacy</h2>
+<h2>Family Memories</h2>
 <p>
-Every generation adds another chapter to our story.
-This website helps ensure those stories continue for years to come.
+Browse family photos, milestones,
+and treasured moments through the years.
 </p>
+</div>
+
 </div>
 
 </div>
 
 <footer>
-© 2026 The Gaudreault Family
+© 2026 The Gaudreault Family • Built with Love
 </footer>
 
 </body>
