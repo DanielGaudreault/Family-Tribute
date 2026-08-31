@@ -50,7 +50,7 @@ body{
     text-decoration:none;
     padding:10px 16px;
     border-radius:8px;
-    transition:.3s;
+    transition:0.3s;
 }
 
 .nav a:hover{
@@ -73,11 +73,19 @@ body{
     font-size:18px;
 }
 
+.intro{
+    max-width:900px;
+    margin:40px auto;
+    text-align:center;
+    padding:0 20px;
+    color:#555;
+    line-height:1.8;
+}
+
 .grid{
     max-width:1200px;
     margin:auto;
-    padding:50px 20px;
-
+    padding:20px;
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(260px,300px));
     justify-content:center;
@@ -92,17 +100,17 @@ body{
     text-decoration:none;
     color:#333;
     box-shadow:0 5px 15px rgba(0,0,0,.1);
-    transition:.3s;
+    transition:0.3s;
 }
 
 .card:hover{
     transform:translateY(-8px);
-    box-shadow:0 10px 20px rgba(0,0,0,.15);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
 }
 
 .card img{
     width:100%;
-    height:220px;
+    height:240px;
     object-fit:cover;
 }
 
@@ -113,10 +121,12 @@ body{
 
 .card-content h2{
     margin-bottom:10px;
+    color:#1f2937;
 }
 
 .card-content p{
     margin-bottom:8px;
+    color:#555;
 }
 
 footer{
@@ -127,82 +137,120 @@ footer{
     margin-top:40px;
 }
 
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .header{
+        flex-direction:column;
+        gap:15px;
+    }
+
+}
+
 </style>
 </head>
-
 <body>
 
 <header class="header">
 
-<div class="logo">
-<a href="index.html">Gaudreault Family</a>
-</div>
+    <div class="logo">
+        <a href="index.html">Gaudreault Family</a>
+    </div>
 
-<nav class="nav">
-<a href="index.html">Home</a>
-<a href="family.html">Family</a>
-<a href="photos.html">Photos</a>
-<a href="events.html">Events</a>
-<a href="memorial.html">Memorial</a>
-</nav>
+    <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="family.html">Family</a>
+        <a href="photos.html">Photos</a>
+        <a href="events.html">Events</a>
+        <a href="memorial.html">Memorial</a>
+    </nav>
 
 </header>
 
 <section class="hero">
-<h1>In Loving Memory</h1>
-<p>Forever Loved • Forever Remembered</p>
+
+    <h1>In Loving Memory</h1>
+
+    <p>Forever Loved • Forever Remembered</p>
+
 </section>
+
+<div class="intro">
+
+    <p>
+        This memorial page is dedicated to the family members
+        who have touched our lives and remain forever in our hearts.
+        Click on a memorial card to read their story and learn more
+        about their life and legacy.
+    </p>
+
+</div>
 
 <div class="grid">
 
-<!-- Brenda -->
+    <!-- Brenda -->
 
-<a class="card" href="brenda.html">
+    <a class="card" href="brenda.html">
 
-<img src="brenda-louise-rosseau.jpg"
-alt="Brenda Louise Rosseau">
+        <img src="brenda-louise-rosseau.jpg"
+             alt="Brenda Louise Rosseau">
 
-<div class="card-content">
-<h2>Brenda Louise Rosseau</h2>
-<p>July 4, 1961 - September 15, 2024</p>
-<p><strong>Click To View Memorial</strong></p>
-</div>
+        <div class="card-content">
 
-</a>
+            <h2>Brenda Louise Rosseau</h2>
 
-<!-- Anita -->
+            <p>July 4, 1961 - September 15, 2024</p>
 
-<a class="card" href="anita-pepin.html">
+            <p><strong>Click To View Memorial</strong></p>
 
-<img src="PÉPIN, Anita.jpg"
-alt="Anita Pépin">
+        </div>
 
-<div classin</h2>
-<h2>Anita Gaudreault</h2>    
-<p>1939 - July 1, 2018</p>
-<p><strong>Click To View Memorial</strong></p>
-</div>
+    </a>
 
-</a>
+    <!-- Anita -->
 
-<!-- Katherine -->
+    <a class="card" href="anita-pepin.html">
 
-<a class="card" href="Katherine-rosseau.html">
+        PÉPIN, Anita.jpg
 
-<img src="katherine-rosseau.jpg"
-alt="Katherine Rosseau">
+        <div class="card-content">
 
-<div class="card-content">
-<h2gust 9, 2006</p>
-<p><strong>Click To View Memorial</strong></p>
-</div>
+            <h2>Anita Pépin</h2>
 
-</a>
+            <p>1939 - July 1, 2018</p>
+
+            <p><strong>Click To View Memorial</strong></p>
+
+        </div>
+
+    </a>
+
+    <!-- Katherine -->
+
+    <a class="card" href="katherine-rosseau.html">
+
+        <img src="katherine-rosseau.jpg"
+             alt="Katherine Rosseau">
+
+        <div class="card-content">
+
+            <h2>Katherine Rosseau</h2>
+
+            <p>1963 - August 9, 2006</p>
+
+            <p><strong>Click To View Memorial</strong></p>
+
+        </div>
+
+    </a>
 
 </div>
 
 <footer>
-Gaudreault Family Memorials
+    Gaudreault Family Memorials
 </footer>
 
 </body>
