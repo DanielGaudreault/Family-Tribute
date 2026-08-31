@@ -8,137 +8,149 @@
 <style>
 
 *{
-margin:0;
-padding:0;
-box*sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 body{
-font-f*mily:Segoe UI,Arial,sans-serif;
-ba*kground:#f5f7fa;
-color:#333;
+    font-family:Segoe UI, Arial, sans-serif;
+    background:#f5f7fa;
+    color:#333;
 }
 
-.h*ader{
-background:#1f2937;
-display:*lex;
-justify-content:space-between*
-align-items:center;
-padding:15px *0px;
-flex-wrap:wrap;
+.header{
+    background:#1f2937;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 30px;
+    flex-wrap:wrap;
 }
 
 .logo a{
-c*lor:white;
-text-decoration:none;
-f*nt-size:30px;
-font-weight:bold;
+    color:white;
+    text-decoration:none;
+    font-size:30px;
+    font-weight:bold;
 }
-*.nav{
-display:flex;
-gap:10px;
-flex*wrap:wrap;
+
+.nav{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
 }
 
 .nav a{
-color:white;*text-decoration:none;
-padding:10px*16px;
-border-radius:8px;
+    color:white;
+    text-decoration:none;
+    padding:10px 16px;
+    border-radius:8px;
 }
 
-.nav a*hover{
-background:#2563eb;
+.nav a:hover{
+    background:#2563eb;
 }
 
-.con*ainer{
-max-width:1000px;
-margin:au*o;
-padding:40px 20px;
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
 }
 
-.memorial*
-background:white;
-padding:35px;
-b*rder-radius:20px;
-box-shadow:0 4px*15px rgba(0,0,0,.08);
+.memorial{
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
 }
 
-.memorial*img{
-width:250px;
-height:250px;
-ob*ect-fit:cover;
-display:block;
-marg*n:auto;
-border-radius:50%;
-margin-*ottom:25px;
-border:5px solid #e5e7*b;
+.memorial img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    display:block;
+    margin:auto;
+    border-radius:50%;
+    margin-bottom:25px;
+    border:5px solid #e5e7eb;
 }
 
 h1{
-text-align:center;
-margi*-bottom:10px;
+    text-align:center;
+    margin-bottom:10px;
 }
 
 .subtitle{
-text-a*ign:center;
-margin-bottom:30px;
-co*or:#666;
-line-height:1.8;
+    text-align:center;
+    margin-bottom:30px;
+    color:#666;
+    line-height:1.8;
 }
 
-.memo*ial p{
-line-height:1.8;
-margin-bot*om:20px;
+.memorial p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.quote{
+    background:#f8fafc;
+    padding:20px;
+    border-left:5px solid #2563eb;
+    border-radius:10px;
+    margin:25px 0;
+    font-style:italic;
 }
 
 .family{
-background:#f*fafc;
-padding:20px;
-border-radius:*2px;
-margin-top:20px;
+    background:#f8fafc;
+    padding:20px;
+    border-radius:12px;
+    margin-top:20px;
 }
 
-.family u*{
-margin-left:25px;
-line-height:2;*}
+.family ul{
+    margin-left:25px;
+    line-height:2;
+}
 
 .button{
-display:inline-block;
-*adding:12px 24px;
-background:#2563*b;
-color:white;
-text-decoration:no*e;
-border-radius:8px;
-margin-top:2*px;
+    display:inline-block;
+    padding:12px 24px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    margin-top:25px;
 }
 
 .button:hover{
-background:#*d4ed8;
+    background:#1d4ed8;
 }
 
 footer{
-background:#1f29*7;
-color:white;
-text-align:center;*padding:20px;
-margin-top:40px;
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
 }
 
-*/style>
+</style>
 </head>
-
 <body>
 
-<header c*ass="header">
+<header class="header">
 
 <div class="logo">
-*a href="index.html">Gaudreault Fam*ly</a>
+<a href="index.html">Gaudreault Family</a>
 </div>
 
 <nav class="nav">
-<* href="index.html">Home</a>
-<a hre*="family.html">Family</a>
-<a href=*photos.html">Photos</a>
-<a href="e*ents.html">Events</a>
+<a href="index.html">Home</a>
+<a href="family.html">Family</a>
+<a href="photos.html">Photos</a>
+<a href="events.html">Events</a>
 <a href="memorial.html">Memorial</a>
 </nav>
 
@@ -153,7 +165,8 @@ anita-pepin.jpg
 <h1>Anita Pépin</h1>
 
 <div class="subtitle">
-1939 – 2018<br>
+1939 – July 1, 2018<br>
+Age 78<br>
 Angliers, Québec
 </div>
 
@@ -164,23 +177,29 @@ Gaudreault. She passed away on July 1, 2018, at the age of 78.
 </p>
 
 <p>
-Family and friends gathered on September 1 at Saint-Viateur
-Church in Angliers to celebrate her life and honor her memory.
-Following the funeral service, she was laid to rest in the parish cemetery.
+The family welcomed relatives and friends on September 1 at
+Saint-Viateur Church in Angliers to celebrate her life and pay
+their final respects. Following the funeral service, Anita was
+laid to rest in the cemetery of the same parish.
 </p>
+
+<div class="quote">
+A loving wife, mother, grandmother, sister and friend whose memory
+continues to live on through the many lives she touched.
+</div>
 
 <div class="family">
 
-<h2>Remembered By</h2>
+<h2>Beloved Family</h2>
 
-<p>Her children:</p>
+<p><strong>Children</strong></p>
 
 <ul>
 <li>Mario Gaudreault (Louise DeGuire)</li>
 <li>Laurette Gaudreault (Jean-Claude Hébert)</li>
 </ul>
 
-<p>Her grandchildren:</p>
+<p><strong>Grandchildren</strong></p>
 
 <ul>
 <li>Randy</li>
@@ -190,20 +209,20 @@ Following the funeral service, she was laid to rest in the parish cemetery.
 <li>Nadia</li>
 </ul>
 
-<p>Her brother:</p>
+<p><strong>Brother</strong></p>
 
 <ul>
 <li>Armand Pépin (Jeanne d'Arc Letourneau)</li>
 </ul>
 
 <p>
-She is also remembered by many brothers-in-law,
-sisters-in-law, nephews, nieces, relatives, and friends.
+She is also lovingly remembered by many brothers-in-law,
+sisters-in-law, nieces, nephews, relatives and friends.
 </p>
 
 <p>
-Anita was predeceased by her husband Raymond Gaudreault
-and her sons Jacquelin and Sylvain.
+Anita was reunited with her beloved husband
+Raymond Gaudreault and her sons Jacquelin and Sylvain.
 </p>
 
 </div>
@@ -222,4 +241,3 @@ Forever Loved • Forever Remembered
 
 </body>
 </html>
-``
