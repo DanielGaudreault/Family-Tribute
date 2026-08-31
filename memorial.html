@@ -14,10 +14,12 @@
 }
 
 body{
-    font-family:'Segoe UI',Arial,sans-serif;
+    font-family:'Segoe UI', Arial, sans-serif;
     background:#f5f7fa;
     color:#333;
 }
+
+/* Header */
 
 .header{
     background:#1f2937;
@@ -50,11 +52,14 @@ body{
     text-decoration:none;
     padding:10px 16px;
     border-radius:8px;
+    transition:.3s;
 }
 
 .nav a:hover{
     background:#2563eb;
 }
+
+/* Hero */
 
 .hero{
     background:linear-gradient(135deg,#4b5563,#6b7280);
@@ -68,29 +73,33 @@ body{
     margin-bottom:10px;
 }
 
+/* Memorial Cards */
+
 .grid{
     max-width:1200px;
     margin:auto;
     padding:50px 20px;
 
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,300px));
+    grid-template-columns:repeat(auto-fit,minmax(250px,300px));
     justify-content:center;
     gap:30px;
 }
 
 .card{
+    display:block;
     background:white;
+    color:#333;
+    text-decoration:none;
     border-radius:20px;
     overflow:hidden;
-    text-decoration:none;
-    color:#333;
     box-shadow:0 5px 15px rgba(0,0,0,.1);
-    transition:.3s;
+    transition:0.3s;
 }
 
 .card:hover{
     transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
 }
 
 .card img{
@@ -122,32 +131,35 @@ footer{
 
 </style>
 </head>
+
 <body>
 
 <header class="header">
 
-    <div class="logo">
-        <a href="index.html">Gaudreault Family</a>
-    </div>
+<div class="logo">
+<a href="index.html">Gaudreault Family</a>
+</div>
 
-    <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="family.html">Family</a>
-        <a href="photos.html">Photos</a>
-        <a href="events.html">Events</a>
-        <a href="memorial.html">Memorial</a>
-    </nav>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="family.html">Family</a>
+<a href="photos.html">Photos</a>
+<a href="events.html">Events</a>
+<a href="memorial.html">Memorial</a>
+</nav>
 
 </header>
 
 <section class="hero">
-    <h1>In Loving Memory</h1>
-    <p>Forever Loved • Forever Remembered</p>
+<h1>In Loving Memory</h1>
+<p>Forever Loved • Forever Remembered</p>
 </section>
 
 <div class="grid">
 
-    brenda.html
+    <!-- Brenda -->
+
+    <a class="card" href="brenda.html">
 
         <img src="brenda-louise-rosseau.jpg"
              alt="Brenda Louise Rosseau">
@@ -160,13 +172,15 @@ footer{
 
     </a>
 
-    anita-pepin.html
+    <!-- Anita -->
 
-        <img src="anita-pepin.jpg"
-             alt="Anita Pépin">
+    <a class="card" href="anita-pepin.html">
+
+        anita-pepin.jpg
 
         <div class="card-content">
-            <h18</p>
+            <h2>Anita Pépin</h2>
+            <p>1939 - 2018</p>
             <p><strong>Click To View Memorial</strong></p>
         </div>
 
@@ -175,7 +189,7 @@ footer{
 </div>
 
 <footer>
-    Gaudreault Family Memorials
+Gaudreault Family Memorials
 </footer>
 
 </body>
